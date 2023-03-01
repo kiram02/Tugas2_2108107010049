@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="238dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/informatika"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="6dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/logoUSK"
+        android:layout_width="85dp"
+        android:layout_height="86dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_unsyiah"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/tombol2"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:onClick="tombolAsset"
+        android:text="Folder Assets"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="402dp"
+            android:layout_height="549dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:paddingRight="10dp"
+            android:text="@string/lorem_ipsum"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+    </ScrollView>
+
+
+</LinearLayout>
